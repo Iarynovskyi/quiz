@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--container-background);
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.questionList {
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.question {
+  padding: 1rem;
+}
+
+.question h3 {
+  font-weight: 500;
+  color: violet;
+}

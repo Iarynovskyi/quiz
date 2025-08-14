@@ -1,0 +1,96 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.questionBlock {
+  padding: 1.5rem;
+  border: 1px dashed black;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questionBlock textarea,
+.questionBlock select,
+.questionBlock input[type='text'] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: var(--danger-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.addButton,
+.submitButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.addButton {
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid black;
+}
+
+.addButton:hover {
+  background-color: violet;
+}
+
+.submitButton {
+  background-color: gray;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: green;
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}

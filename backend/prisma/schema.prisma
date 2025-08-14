@@ -18,6 +18,7 @@ model Question {
   id            Int     @id @default(autoincrement())
   text          String
   correctAnswer String
+  type          String
   quizId Int
   quiz   Quiz @relation(fields: [quizId], references: [id], onDelete: Cascade)
 }
